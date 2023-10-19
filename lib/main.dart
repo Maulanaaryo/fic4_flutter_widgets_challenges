@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets_challenge/basic_form/dialog_widget.dart';
+import 'package:flutter_widgets_challenge/basic_form/form_widget.dart';
 import 'package:flutter_widgets_challenge/navigation/bottom_navbar.dart';
 import 'package:flutter_widgets_challenge/navigation/navigation_pop.dart';
 import 'package:flutter_widgets_challenge/navigation/navigation_push.dart';
@@ -13,7 +15,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -22,12 +23,21 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home:
+          /* ================= 
+           Folder Navigation 
+           ================= */
           // SliverWidget(),
           // BottomNavbarWidget(),
           // DrawerWidget(),
           // NavigationPop(),
           // NavigationPush(),
-          TabbarWidget(),
+          // TabbarWidget(),
+
+          /* ================= 
+           Folder Basic Form 
+           ================= */
+          // DialogWidget(),
+          FormWidget(),
     );
   }
 }
